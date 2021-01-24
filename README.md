@@ -22,4 +22,15 @@ A correlation between ADC value and dB has been found and can be implemented usi
 
 COMPONENT 2: Clicking the picture of the potential accident scene
 
+Materials Required:
+Arduino UNO
+OV7670 Camera Module
+Resistors(10k, 4.7k)
+Jumpers
+
+Once the circuit is set, the camera module can be configured to capture an image whenever the a particular pin goes in high. 
+NOTE: Running the OV7670 module requires serial port reader GUI, which can be installed on your host machine.
+
+
+
 
