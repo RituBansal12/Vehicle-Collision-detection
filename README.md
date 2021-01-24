@@ -45,6 +45,8 @@ We transfer the image taken to the server using an wifi module. On the receiving
 
 COMPONENT 4: Running DL alogirthm to detect accident has occurred
 
+Using OpenCv, train an alogrithm to measure the distance bewteen two objects(vehicle-vehicle, Vehicle-object). If the distance is lesser than a specified limit, an alert is sent to the emergency services. 
+
 
 
 
