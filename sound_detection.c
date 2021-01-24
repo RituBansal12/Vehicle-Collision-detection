@@ -27,10 +27,10 @@ Serial.println (dB);
 
 if (dB>60)
 {
-// turn the LED on (HIGH is the voltage level)
+// turn the pin on (HIGH is the voltage level)
   digitalWrite(3, HIGH);   
-// wait for a second
-  delay(2000);                       
+// wait for a few seconds
+  delay(200000);                       
   digitalWrite(3, LOW); 
 }
 
