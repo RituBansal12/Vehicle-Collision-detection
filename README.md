@@ -31,6 +31,10 @@ Jumpers
 Once the circuit is set, the camera module can be configured to capture an image whenever the a particular pin goes in high. 
 NOTE: Running the OV7670 module requires serial port reader GUI, which can be installed on your host machine.
 
+COMPONENT 3: Tranfering image to server
+
+We transfer the image taken to the server using an wifi module.
+
 
 
 
