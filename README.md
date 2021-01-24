@@ -1,5 +1,7 @@
 # Vehicle-Collision-detection
 
+THIS APPLICATION WAS DEVELOPED IN SPRING 2020 AND IS STILL A WORK IN PROGRESS. BY NO MEANS SHOULD ANY MODULE BE CONSIDERED FIT TO BE DEPLOYED IN REAL-TIME SETTINGS.
+
 This application is a smart vehicle collision detector that is developed to detect accidents occuring in secluded places at an inconvineant time through survelliance cameras. 
 It is built using the principles of IoT and Deep Learning.
 
