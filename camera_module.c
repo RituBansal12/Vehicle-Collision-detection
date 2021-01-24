@@ -316,10 +316,6 @@ const struct regval_list ov7670_default_regs[] PROGMEM = {//from the linux drive
   { REG_COM7, COM7_RESET },
   { REG_TSLB, 0x04 }, /* OV */
   { REG_COM7, 0 },  /* VGA */
-  /*
-  * Set the hardware window.  These values from OV don't entirely
-  * make sense - hstop is less than hstart.  But they work...
-  */
   { REG_HSTART, 0x13 }, { REG_HSTOP, 0x01 },
   { REG_HREF, 0xb6 }, { REG_VSTART, 0x02 },
   { REG_VSTOP, 0x7a }, { REG_VREF, 0x0a },
@@ -353,7 +349,6 @@ const struct regval_list ov7670_default_regs[] PROGMEM = {//from the linux drive
   { REG_HAECC7, 0x94 },
   { REG_COM8, COM8_FASTAEC | COM8_AECSTEP | COM8_AGC | COM8_AEC },
   { 0x30, 0 }, { 0x31, 0 },//disable some delays
-  /* Almost all of these are magic "reserved" values.  */
   { REG_COM5, 0x61 }, { REG_COM6, 0x4b },
   { 0x16, 0x02 }, { REG_MVFP, 0x07 },
   { 0x21, 0x02 }, { 0x22, 0x91 },
@@ -404,7 +399,6 @@ const struct regval_list ov7670_default_regs[] PROGMEM = {//from the linux drive
   { 0x9d, 0x4c }, { 0x9e, 0x3f },
   { 0x78, 0x04 },
 
-  /* Extra-weird stuff.  Some sort of multiplexor register */
   { 0x79, 0x01 }, { 0xc8, 0xf0 },
   { 0x79, 0x0f }, { 0xc8, 0x00 },
   { 0x79, 0x10 }, { 0xc8, 0x7e },
@@ -560,8 +554,8 @@ static void captureImg(uint16_t wg, uint16_t hg){
 
   StringPgm(PSTR("*RDY*"));
 
-  while (!(PIND & 8));//wait for high
-  while ((PIND & 8));//wait for low
+  while (!(PIND & 3));//wait for high
+  while ((PIND & 3));//wait for low
 
     y = hg;
   while (y--){
