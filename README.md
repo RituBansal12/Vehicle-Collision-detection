@@ -41,7 +41,11 @@ Connecting wires
 Laptop   
 Power supply
 
-We transfer the image taken to the server using an wifi module.
+We transfer the image taken to the server using an wifi module. On the receiving end, a PHP script gets the image and uploads it to the server. 
+
+COMPONENT 4: Running DL alogirthm to detect accident has occurred
+
+
 
 
 
