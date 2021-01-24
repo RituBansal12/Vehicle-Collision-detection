@@ -33,6 +33,14 @@ NOTE: Running the OV7670 module requires serial port reader GUI, which can be in
 
 COMPONENT 3: Tranfering image to server
 
+Components Required:
+Arduino UNO
+ESP8266 Wi-Fi Module
+USB Cable
+Connecting wires
+Laptop   
+Power supply
+
 We transfer the image taken to the server using an wifi module.
 
 
